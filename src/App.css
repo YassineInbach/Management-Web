@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+  border: none;
+}
+body{
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+html{
+  font-family: 'Poppins', sans-serif;
+}
+:root{
+  --blue : #0086D5;
+  --white : #ffffff;
+  --title-color : #303030;
+  --text-color : #707070;
+  --link-color : #464646;
+  --background : #e5e5e5;
+  --black : #000000;
+  --fcfcfc : #fcfcfc;
+  --fafafa : #fafafa;
+}
+body.dark{
+  --white : black;
+  --title-color : white;
+  --text-color : white;
+  --link-color : white;
+  --black : #fafafa;
+  --fcfcfc : black;
+  --fafafa : black ;
+}
+
+
+*::selection{
+  color: var(--white);
+  background: var(--title-color);
+}
+.btn-blue{
+  background: var(--blue);
+  padding: 8px 15px;
+  color: var(--white);
+  font-size: 14px;
+  border-radius: 4px;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+.btn-blue:hover{
+  background: var(--title-color);
+  transition: 1s ease;
+}
+
+
+@media screen and (max-width : 320px){
+  .navbar .btns .btn-blue{
+    background: var(--white);
+    color: var(--black);
+    }
+    .navbar .btns .btn-blue:hover{
+      background: var(--blue);
+      color: var(--white);
+    }
+    .btn-blue{
+      padding: 4px 8px;
+      font-size: 11px;
+    }
+
+}
+@media screen and (min-width : 320px) and (max-width : 767px) {
+  .navbar .btns .btn-blue{
+    background: var(--white);
+    color: var(--black);
+    }
+    .navbar .btns .btn-blue:hover{
+      background: var(--blue);
+      color: var(--white);
+    }
+    .btn-blue{
+      padding: 5px 12px;
+      font-size: 12px;
+    }
+}
