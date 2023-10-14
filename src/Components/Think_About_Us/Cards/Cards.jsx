@@ -15,9 +15,9 @@ function Cards({ cards }) {
         }
     }
     function handlePrevStep() {
-        var lastArray = CardData[CardData.length - 1];
-        if (lastArray) {
-            setStep(step - 1);
+        //var lastArray = CardData[CardData.length - 1];
+        if (step > 0) {
+            setStep(step - 2);
         } else {
             setStep(0);
         }

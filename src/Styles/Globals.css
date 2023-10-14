@@ -6,19 +6,23 @@
   column-gap: 10px;
   padding: 0 2em;
 }
+
 @keyframes animated {
-  from{
+  from {
     transform: scale(1);
     opacity: 0.6;
   }
-  to{
+
+  to {
     transform: scale(1.3);
     opacity: 1;
   }
 }
-.light-mode{
+
+.light-mode {
   animation: animated 2s infinite;
 }
+
 .logo {
   display: flex;
   align-items: center;
@@ -29,7 +33,8 @@
   width: 33px;
 }
 
-.logo p , .logo p .logo-para{
+.logo p,
+.logo p .logo-para {
   font-size: 19px;
   font-weight: 600;
   letter-spacing: 1px;
@@ -344,6 +349,7 @@ img {
   justify-content: start;
   column-gap: 1.3em;
   padding: 4em 2em 1em;
+  width: 100%;
   /*transition: all 1s ease;*/
 }
 
@@ -413,7 +419,6 @@ img {
   border-radius: 10px;
 }
 
-
 .commonly .commonly-info {
   text-align: center;
 }
@@ -468,7 +473,8 @@ img {
 .commonly {
   padding: 2em;
 }
-.icon-open-close{
+
+.icon-open-close {
   color: var(--title-color);
 }
 
@@ -663,7 +669,8 @@ footer .made-with p span a {
     column-gap: 6px;
   }
 
-  .logo p  , .logo p .logo-para .logo-para{
+  .logo p,
+  .logo p .logo-para .logo-para {
     font-size: 15px;
   }
 
@@ -854,9 +861,11 @@ footer .made-with p span a {
     padding: 1em 0;
     /* transition: all 1s ease; */
   }
-  .center{
+
+  .center {
     width: 100%;
   }
+
   .center .wrapper {
     width: 60%;
   }
@@ -993,26 +1002,33 @@ footer .made-with p span a {
     flex-wrap: wrap;
     gap: 1em 4em;
   }
-  .Group-List .group1{
+
+  .Group-List .group1 {
     flex-shrink: 0;
   }
-  .Group-List .group1 .links h3{
+
+  .Group-List .group1 .links h3 {
     font-size: 12px;
   }
-  .Group-List, .Group-List .group1 .links nav ul li a {
+
+  .Group-List,
+  .Group-List .group1 .links nav ul li a {
     font-size: 10px;
     line-height: 17px;
-}
-.footer-Groups .Group {
-  max-width: max-content;
-}
-footer .made-with {
-  padding-top: 1em;
-}
-footer .made-with p {
-  line-height: 17px;
-  font-size: 11px;
-}
+  }
+
+  .footer-Groups .Group {
+    max-width: max-content;
+  }
+
+  footer .made-with {
+    padding-top: 1em;
+  }
+
+  footer .made-with p {
+    line-height: 17px;
+    font-size: 11px;
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
@@ -1024,7 +1040,8 @@ footer .made-with p {
     column-gap: 6px;
   }
 
-  .logo p , .logo p .logo-para {
+  .logo p,
+  .logo p .logo-para {
     font-size: 17px;
   }
 
@@ -1080,7 +1097,8 @@ footer .made-with p {
 
   .hero-section .content p,
   .trusted p,
-  .info p ,.suscribe .suscribe-info p  {
+  .info p,
+  .suscribe .suscribe-info p {
     font-size: 13px;
     line-height: 19px;
   }
@@ -1117,7 +1135,8 @@ footer .made-with p {
   .all-tasks .info .task-info h2 {
     padding-bottom: 2px;
   }
-  h2{
+
+  h2 {
     font-size: 15px;
     line-height: 21px;
   }
@@ -1172,7 +1191,8 @@ footer .made-with p {
     width: 23px;
   }
 
-  .fatures .groups .group .group_info h4,.commonly .commonly-info h4  {
+  .fatures .groups .group .group_info h4,
+  .commonly .commonly-info h4 {
     font-size: 15px;
   }
 
@@ -1202,138 +1222,183 @@ footer .made-with p {
   .all-tasks .info:nth-child(2) {
     flex-direction: column-reverse;
   }
+
   .box {
     padding: 1em;
     overflow: hidden;
+  }
+
+  .center {
+    width: 100%;
+  }
+
+  .cards {
+    column-gap: 12px;
+    padding: 1em;
+  }
+
+  .cards .card {
+    padding: 0 8px 10px 8px;
+    width: 90%;
+  }
+
+  .cards .card .img img {
+    width: 32px;
+  }
+
+  .cards .card .content-card {
+    padding-top: 17px;
+  }
+
+  .cards .card h3 {
+    font-size: 12px;
+  }
+
+  .cards .card p {
+    font-size: 11px;
+    line-height: 16px;
+  }
+
+  .cards .card h6 {
+    font-size: 10px;
+  }
+
+  .map {
+    column-gap: 10px;
+    margin-top: 3px;
+  }
+
+  .map button {
+    width: 11px;
+    height: 11px;
+  }
+
+  .commoly {
+    padding: 1em;
+  }
+
+  .commonly .commonly-components {
+    flex-direction: column;
+    padding: 1em 0 0;
+  }
+
+  .commonly
+    .commonly-components
+    .all-components
+    .components
+    .components-info
+    h4,
+  .suscribe .suscribe-info h5 {
+    font-size: 13px;
+  }
+
+  .commonly .commonly-components .all-components .components {
+    align-items: self-start;
+    padding: 8px 12px 5px;
+  }
+
+  .commonly .commonly-components img {
+    top: 23px;
+    width: 250px;
+    height: 220px;
+  }
+
+  .suscribe {
+    padding: 1em 12px 1em;
+    margin-top: 0;
+    border-radius: 110px 0px 110px 0px;
+  }
+
+  .suscribe .suscribe-info form {
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+    padding-top: 7px;
+  }
+
+  .suscribe .suscribe-info form .input {
+    padding: 0 7px;
+    width: 80%;
+  }
+
+  .suscribe .suscribe-info form .input input {
+    padding: 6px 0;
+  }
+
+  .suscribe .suscribe-info form .btn-blue {
+    padding: 5px 12px;
+  }
+
+  .suscribe .suscribe-img {
+    opacity: 0.5;
+  }
+
+  .suscribe .suscribe-img .img img {
+    width: 36px;
+    bottom: 87px;
+    left: 91px;
+  }
+
+  .suscribe .suscribe-img img {
+    width: 95px;
+    bottom: 9px;
+    left: 0px;
+  }
+
+  footer {
+    padding: 2em 1em 1em;
+  }
+
+  .footer-Groups .Group > p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  footer .footer-Groups {
+    align-items: start;
+    flex-wrap: wrap;
+  }
+
+  .footer-Groups .Group .icons {
+    padding: 9px 0;
+  }
+
+  .footer-Groups .Group .icons a #icon {
+    font-size: 13px;
+    padding: 5px;
+  }
+
+  .Group-List,
+  .Group-List .group1 {
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 1em 3em;
+  }
+
+  .Group-List .group1 .links h3 {
+    font-size: 13px;
+  }
+
+  .Group-List,
+  .Group-List .group1 .links nav ul li a {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .Group-List,
+  .Group-List .group1:nth-child(2) {
+    flex: 1 1 75px;
+  }
+
+  .footer-Groups .Group {
+    max-width: max-content;
+  }
+
+  footer .made-with p {
+    font-size: 13px;
+  }
 }
-.center {
-  width: 100%;
- }
- .cards {
-  column-gap: 12px;
-  padding: 1em;
- }
- .cards .card{
-  padding: 0 8px 10px 8px;
-  width: 90%;
- }
- .cards .card .img img {
-  width: 32px;
- }
- .cards .card .content-card {
-  padding-top: 17px;
- }
- .cards .card h3 {
-  font-size: 12px;
-}
-.cards .card p{
-  font-size: 11px;
-  line-height: 16px;
-}
-.cards .card h6 {
-  font-size: 10px;
-}
-.map {
-  column-gap: 10px;
-  margin-top: 3px;
-}
-.map button {
-  width: 11px;
-  height: 11px;
- }
- .commoly{
-  padding: 1em;
- }
- .commonly .commonly-components {
-  flex-direction: column;
-  padding: 1em 0 0;
-}
-.commonly .commonly-components .all-components .components .components-info h4 , .suscribe .suscribe-info h5{
-  font-size: 13px;
-}
-.commonly .commonly-components .all-components .components {
-  align-items: self-start;
-  padding: 8px 12px 5px; 
-}
-.commonly .commonly-components img {
-  top: 23px;
-  width: 250px;
-  height: 220px;
-}
-.suscribe {
-  padding: 1em 12px 1em;
-  margin-top: 0;
-  border-radius: 110px 0px 110px 0px;
-}
-.suscribe .suscribe-info form {
-  flex-direction: column;
-  width: 100%;
-  gap: 8px;
-  padding-top: 7px;
-}
-.suscribe .suscribe-info form .input {
-  padding: 0 7px;
-  width: 80%;
-}
-.suscribe .suscribe-info form .input input {
-  padding: 6px 0;
- }
- .suscribe .suscribe-info form .btn-blue {
-  padding: 5px 12px;
- }
- .suscribe .suscribe-img{
-  opacity: 0.5;
- }
- .suscribe .suscribe-img .img img {
-  width: 36px;
-  bottom: 87px;
-  left: 91px;
-}
-.suscribe .suscribe-img img {
-  width: 95px;
-  bottom: 9px;
-  left: 0px;
-}
-footer {
-  padding: 2em 1em 1em;
-}
-.footer-Groups .Group > p{
-  font-size: 12px;
-  line-height: 18px;
-}
-footer .footer-Groups {
-  align-items: start;
-  flex-wrap: wrap;
-}
-.footer-Groups .Group .icons {
-  padding: 9px 0;
- }
- .footer-Groups .Group .icons a #icon{
-  font-size: 13px;
-  padding: 5px;
- }
- .Group-List, .Group-List .group1 {
-  align-items: start;
-  flex-wrap: wrap;
-  gap: 1em 3em;
-}
-.Group-List .group1 .links h3{
-  font-size: 13px;
-}
-.Group-List, .Group-List .group1 .links nav ul li a {
-  font-size: 12px;
-  line-height: 20px;
-}
-.Group-List, .Group-List .group1:nth-child(2) {
-  flex: 1 1 75px;
-} 
-.footer-Groups .Group {
-  max-width: max-content;
-}
-footer .made-with p{
-  font-size: 13px;
-}
-}
+
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .navbar {
     padding: 0 1em;
@@ -1343,7 +1408,8 @@ footer .made-with p{
     column-gap: 6px;
   }
 
-  .logo p , .logo p .logo-para {
+  .logo p,
+  .logo p .logo-para {
     font-size: 17px;
   }
 
@@ -1399,15 +1465,18 @@ footer .made-with p{
 
   .hero-section .content p,
   .trusted p,
-  .info p , .footer-Groups .Group > p {
+  .info p,
+  .footer-Groups .Group > p {
     font-size: 13px;
     line-height: 19px;
     color: var(--text-color);
   }
-  .suscribe .suscribe-info p{
+
+  .suscribe .suscribe-info p {
     font-size: 13px;
     line-height: 19px;
   }
+
   .hero-section .content form {
     padding-top: 10px;
   }
@@ -1438,7 +1507,8 @@ footer .made-with p{
 
   .trusted h2,
   .fatures h2,
-  .all-tasks .info h2,.suscribe .suscribe-info h2 {
+  .all-tasks .info h2,
+  .suscribe .suscribe-info h2 {
     padding-bottom: 2px;
     font-size: 15px;
   }
@@ -1465,13 +1535,17 @@ footer .made-with p{
     max-width: max-content;
   }
 
-  .info h4 ,.commonly .commonly-info h4,.suscribe .suscribe-info h5 {
+  .info h4,
+  .commonly .commonly-info h4,
+  .suscribe .suscribe-info h5 {
     font-size: 14px;
     padding-bottom: 3px;
   }
+
   .suscribe .suscribe-info h5 {
     padding-bottom: 0;
   }
+
   .trusted h2,
   .info h2 {
     padding-bottom: 2px;
@@ -1527,151 +1601,203 @@ footer .made-with p{
   .all-tasks .info:nth-child(2) .task-info {
     flex: 1 1 268px;
   }
-  h2{
+
+  h2 {
     font-size: 16px;
   }
+
   .center {
     width: 100%;
+  }
+
+  .center .wrapper {
+    width: 80%;
+  }
+
+  .cards {
+    column-gap: 1em;
+    padding: 2em 1em 1em;
+    /* transition: all 1s ease; */
+  }
+
+  .cards .card {
+    padding: 0 8px 15px 8px;
+    width: 80%;
+  }
+
+  .cards .card .img img {
+    width: 40px;
+  }
+
+  .cards .card .content-card {
+    padding-top: 20px;
+  }
+
+  .cards .card h3 {
+    font-size: 14px;
+  }
+
+  .map {
+    column-gap: 8px;
+    margin-top: 4px;
+  }
+
+  .map button {
+    width: 12px;
+    height: 12px;
+  }
+
+  .commonly {
+    padding: 1em;
+  }
+
+  .commonly .commonly-components {
+    padding: 1.3em 0 0;
+  }
+
+  .commonly
+    .commonly-components
+    .all-components
+    .components
+    .components-info
+    h4 {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .commonly
+    .commonly-components
+    .all-components
+    .components
+    .components-info
+    .C-para
+    p {
+    font-size: 12px;
+    line-height: 17px;
+  }
+
+  .commonly .commonly-components .all-components .components {
+    align-items: unset;
+    padding: 5px 7px;
+    max-width: 300px;
+  }
+
+  .commonly .commonly-components img {
+    top: 36px;
+    width: 330px;
+    height: 250px;
+  }
+
+  .suscribe {
+    padding: 1em 5px 1em;
+    margin-top: 0em;
+  }
+
+  .suscribe .suscribe-info form {
+    gap: 5px;
+    padding-top: 4px;
+  }
+
+  .suscribe .suscribe-info form .input {
+    width: 40%;
+  }
+
+  .suscribe .suscribe-info form .input input {
+    padding: 6px 0;
+  }
+
+  .suscribe .suscribe-img {
+    opacity: 0.5;
+  }
+
+  .suscribe .suscribe-img .img img {
+    width: 30px;
+    bottom: 86px;
+    left: 117px;
+  }
+
+  .suscribe .suscribe-img img {
+    width: 90px;
+    left: 27px;
+  }
+
+  .suscribe .suscribe-info form .input input::placeholder,
+  .suscribe .suscribe-info form .input input[type="email"] {
+    padding: 5px 0;
+  }
+
+  .suscribe .suscribe-info form .btn-blue {
+    padding: 6px 12px;
+  }
+
+  footer {
+    padding: 2em 1em 1em;
+  }
+
+  footer .footer-Groups {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer-Groups .Group {
+    max-width: max-content;
+  }
+
+  .footer-Groups .Group .icons a #icon {
+    padding: 3px;
+  }
+
+  .Group-List,
+  .Group-List .group1 .links nav ul li a {
+    font-size: 12px;
+    line-height: 23px;
+  }
+
+  footer .made-with {
+    padding-top: 1em;
+  }
+
+  footer .made-with p {
+    font-size: 13px;
+    line-height: 20px;
+  }
 }
-.center .wrapper {
-  width: 80%;
-}
-.cards {
-  column-gap: 1em;
-  padding: 2em 1em 1em;
-  /* transition: all 1s ease; */
-}
-.cards .card {
-  padding: 0 8px 15px 8px;
-  width: 80%;
- }
- .cards .card .img img {
-  width: 40px;
- }
- .cards .card .content-card {
-  padding-top: 20px;
- }
- .cards .card h3{
-  font-size: 14px;
- }
- .map {
-  column-gap: 8px;
-  margin-top: 4px;
-}
-.map button {
-  width: 12px;
-  height: 12px;
-}
-.commonly {
-  padding: 1em;
-}
- .commonly .commonly-components {
-  padding: 1.3em 0 0;
-}
-.commonly .commonly-components .all-components .components .components-info h4{
-  font-size: 13px;
-  line-height: 20px;
-}
-.commonly .commonly-components .all-components .components .components-info .C-para p {
-  font-size: 12px;
-  line-height: 17px;
-}
-.commonly .commonly-components .all-components .components {
-  align-items: unset;
-  padding: 5px 7px;
-  max-width: 300px;
-}
-.commonly .commonly-components img {
-  top: 36px;
-  width: 330px;
-  height: 250px;
-}
-.suscribe {
-  padding: 1em 5px 1em;
-  margin-top: 0em;
- }
- .suscribe .suscribe-info form {
-  gap: 5px;
-  padding-top: 4px;
-}
-.suscribe .suscribe-info form .input {
-  width: 40%;
-}
-.suscribe .suscribe-info form .input input{
-  padding: 6px 0;
-}
-.suscribe .suscribe-img{
-  opacity: 0.5;
-}
-.suscribe .suscribe-img .img img {
-  width: 30px;
-  bottom: 86px;
-  left: 117px;
-}
-.suscribe .suscribe-img img {
-  width: 90px;
-  left: 27px;
-}
-.suscribe .suscribe-info form .input input::placeholder, .suscribe .suscribe-info form .input input[type="email"] {
-  padding: 5px 0;
-}
-.suscribe .suscribe-info form .btn-blue {
-  padding: 6px 12px;
- }
- footer {
-  padding: 2em 1em 1em;
-}
-footer .footer-Groups {
-  flex-wrap: wrap;
-  justify-content: center;
- }
- .footer-Groups .Group {
-  max-width: max-content;
-}
-.footer-Groups .Group .icons a #icon {
-  padding: 3px;
-}
-.Group-List, .Group-List .group1 .links nav ul li a {
-  font-size: 12px;
-  line-height: 23px;
-}
-footer .made-with {
-  padding-top: 1em;
-}
-footer .made-with p {
-  font-size: 13px;
- line-height: 20px;
-}
-}
-@media screen and (min-width : 480px) and (max-width : 633px) , (not(min-width : 633px) and (max-width : 767px)){
+
+@media screen and (min-width: 480px) and (max-width: 633px),
+  (not(min-width: 633px) and (max-width : 767px)) {
   .commonly .commonly-components {
     flex-wrap: wrap;
     justify-content: end;
-}
-.commonly .commonly-components .all-components .components {
-  max-width: max-content;
-}
-.commonly .commonly-components img {
-  top: 19px;
-  width: 300px;
-  height: 220px;
-}
-.suscribe .suscribe-info form {
-  flex-direction: column;
-}
-.suscribe .suscribe-info form .input {
-  width: 60%;
+  }
+
+  .commonly .commonly-components .all-components .components {
+    max-width: max-content;
+  }
+
+  .commonly .commonly-components img {
+    top: 19px;
+    width: 300px;
+    height: 220px;
+  }
+
+  .suscribe .suscribe-info form {
+    flex-direction: column;
+  }
+
+  .suscribe .suscribe-info form .input {
+    width: 60%;
+  }
 }
 
-}
 @media screen and (min-width: 480px) and (max-width: 612px),
   (not(min-width: 612px) and (max-width : 767px)) {
   .all-tasks .info:nth-child(2) {
     flex-direction: column;
   }
+
   .all-tasks .info:nth-child(2) .task-info {
     flex: auto;
-}
+  }
 
   .all-tasks .info img {
     width: 70%;
@@ -1710,5 +1836,222 @@ footer .made-with p {
     flex: auto;
     width: 90%;
     max-width: max-content;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 900px) {
+  .navbar {
+    align-items: center;
+    padding: 0 1em;
+  }
+
+  .logo img {
+    width: 27px;
+  }
+
+  .logo p,
+  .logo p .logo-para {
+    font-size: 18px;
+  }
+
+  .navbar .menubar ul li .links {
+    font-size: 15px;
+  }
+
+  .btn-blue {
+    padding: 7px 11px;
+    font-size: 12px;
+  }
+
+  .hero-section {
+    padding: 2em 1em 1em;
+  }
+
+  .hero-section .content h1 {
+    font-size: 26px;
+    line-height: 37px;
+    padding-bottom: 7px;
+  }
+
+  .hero-section .content p,
+  .trusted p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  img {
+    width: 300px;
+  }
+
+  .hero-section .content form {
+    gap: 7px;
+  }
+
+  .hero-section .content form input {
+    padding: 6px 2px 6px 9px;
+    width: 55%;
+  }
+
+  .hero-section .content form input[type="email"],
+  .hero-section .content form input::placeholder {
+    font-size: 12px;
+  }
+
+  h2 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .trusted .groups-img img {
+    width: 75px;
+  }
+
+  .info h4,
+  .commonly .commonly-info h4 {
+    padding-bottom: 4px;
+    font-size: 15px;
+  }
+
+  .info p,
+  .suscribe .suscribe-info p,
+  .footer-Groups .Group > p {
+    font-size: 13px;
+    line-height: 21px;
+  }
+
+  .info .btns {
+    padding-top: 6px;
+  }
+
+  .trusted h2,
+  .info h2,
+  .commonly .commonly-info h2 {
+    padding-bottom: 0px;
+  }
+
+  .fatures {
+    column-gap: 1em;
+    padding: 3em 1em 2em;
+  }
+
+  .fatures .info {
+    max-width: 327px;
+  }
+
+  .fatures .groups .group .img {
+    padding: 5px 6px 1px;
+    width: 21px;
+  }
+
+  .fatures .groups .group .img img {
+    width: 21px;
+  }
+
+  .fatures .groups .group:nth-child(1),
+  .fatures .groups .group:nth-child(3) {
+    position: inherit;
+  }
+
+  .fatures .groups .group .group_info p {
+    font-size: 11px;
+  }
+
+  .fatures .groups .group {
+    max-width: 194px;
+    padding: 10px;
+  }
+
+  .all-tasks {
+    gap: 2em 0;
+    padding: 2em 1em 0em;
+  }
+
+  .all-tasks .info .task-info h2 {
+    line-height: 29px;
+  }
+
+  .commonly {
+    padding: 1em;
+  }
+
+  .commonly .commonly-components {
+    padding: 1.5em 0px;
+  }
+
+  .commonly .commonly-components .all-components .components {
+    padding: 7px 9px;
+  }
+
+  .commonly .commonly-components img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .suscribe {
+    padding: 2em 5px 2em;
+    margin-top: 0em;
+  }
+
+  .suscribe .suscribe-img {
+    opacity: 0.6;
+  }
+
+  .suscribe .suscribe-img .img img {
+    width: 37px;
+    bottom: 108px;
+    left: 199px;
+  }
+
+  .suscribe .suscribe-img img {
+    width: 114px;
+    left: 90px;
+  }
+
+  .suscribe .suscribe-info form .input {
+    width: 33%;
+  }
+
+  .suscribe .suscribe-info form .input input::placeholder,
+  .suscribe .suscribe-info form .input input[type="email"] {
+    font-size: 12px;
+  }
+
+  .suscribe .suscribe-info form .input input {
+    padding: 6px 0;
+  }
+
+  footer {
+    padding: 2em 1em 2em;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 792px),
+  (not((min-width: 792px) and (max-width : 900px))) {
+  .commonly .commonly-components img {
+    width: 263px;
+    height: 270px;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 822px),
+  (not((min-width: 822px) and (max-width : 900px))) {
+  .fatures {
+    flex-wrap: wrap;
+    gap: 1em 0;
+  }
+
+  .fatures .info {
+    max-width: max-content;
+  }
+
+  .fatures .groups {
+    align-items: initial;
+    gap: 10px;
+  }
+
+  .fatures .groups .group {
+    max-width: 230px;
+    padding: 9px;
+    flex: 1 1 187px;
   }
 }

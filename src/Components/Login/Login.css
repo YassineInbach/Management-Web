@@ -1,244 +1,337 @@
+section {
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85%;
+  width: 100%;
+  animation: animated 3s ease-in-out;
+  overflow: hidden;
+}
 
-section{
-    position: fixed;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 85%;
-    width: 100%;
-    animation: animated 3s ease-in-out;
-    overflow: hidden;
+.box-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.box-login{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
-}
-.login{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: var(--black);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-radius: 10px;
-    padding: 1em;
-    width: 400px;
 
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--black);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+  padding: 1em;
+  width: 400px;
 }
-.login .close{
-    position: relative;
-    bottom: 5px;    
-    right: -5px;
-    width: 100%;
+
+.login .close {
+  position: relative;
+  bottom: 5px;
+  right: -5px;
+  width: 100%;
 }
-.login .close .icone-login{
-    float: right;
-    color: var(--white);
-    font-size: 1.5em;
+
+.login .close .icone-login {
+  float: right;
+  color: var(--white);
+  font-size: 1.5em;
 }
-.login .close .icone-login:hover,.login .close .icone-login:focus{
-    color: red;
-    cursor: pointer;
+
+.login .close .icone-login:hover,
+.login .close .icone-login:focus {
+  color: red;
+  cursor: pointer;
 }
-.login .img-login img{
-    width: 70px;
-    object-fit: contain;
+
+.login .img-login img {
+  width: 70px;
+  object-fit: contain;
 }
-.login form{
-    padding: 10px 0;
-width: 350px;}
-.login form .inpt-login{
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 15px;
+
+.login form {
+  padding: 10px 0;
+  width: 350px;
 }
-.login form .inpt-login label{
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--white);
-    letter-spacing: 1px;
-    padding-bottom: 7px;
+
+.login form .inpt-login {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 15px;
 }
-.login form .inpt-login input:focus{
-    outline: 2px solid var(--blue);
-    border: 0;
+
+.login form .inpt-login label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--white);
+  letter-spacing: 1px;
+  padding-bottom: 7px;
 }
-.login form .inpt-login input{
-    border : 2px solid grey;
-    padding:  8px;
-    border-radius: 5px;
+
+.login form .inpt-login input:focus {
+  outline: 2px solid var(--blue);
+  border: 0;
 }
-.login form .inpt-login input::placeholder{
-    font-size: 12px;
-    font-weight: 400;
-    color: black;
-    letter-spacing: 1px;
+
+.login form .inpt-login input {
+  border: 2px solid grey;
+  padding: 8px;
+  border-radius: 5px;
 }
-.login form .inpt-login input[type]{
-    font-size: 13px;
-    font-weight: 500;
-    color: var(--blue);
+
+.login form .inpt-login input::placeholder {
+  font-size: 12px;
+  font-weight: 400;
+  color: black;
+  letter-spacing: 1px;
 }
-.login form .btn-login{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+.login form .inpt-login input[type] {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--blue);
 }
-.login form .btn-login .btn-blue{
-    width: 100%;
+
+.login form .btn-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.login form .btn-login .btn-blue:hover{
-    background: var(--white);
-    color: var(--black);
+
+.login form .btn-login .btn-blue {
+  width: 100%;
 }
-.login form .inpt-checkbox{
-    display: flex;
-    column-gap : 5px;
-    padding: 15px 0 0;
+
+.login form .btn-login .btn-blue:hover {
+  background: var(--white);
+  color: var(--black);
 }
+
+.login form .inpt-checkbox {
+  display: flex;
+  column-gap: 5px;
+  padding: 15px 0 0;
+}
+
 .login form .inpt-checkbox p {
-    font-size: 13px;
-    color: var(--white);
-    letter-spacing: 1px;
-    font-weight: 400;
+  font-size: 13px;
+  color: var(--white);
+  letter-spacing: 1px;
+  font-weight: 400;
 }
+
 @keyframes animated {
-    from {
-        opacity: 0.3;
-        transform: scale(0);
-    }
-    to{
-        opacity: 1;
-    }
+  from {
+    opacity: 0.3;
+    transform: scale(0);
+  }
+
+  to {
+    opacity: 1;
+  }
 }
+
 /*********************************************************MediaQuery********************************************************/
-@media screen and (max-width : 320px){
-    section {
-        height: 75%;
-    }
-    .login {
-        padding: 15px;
-        width: 235px;
-    }
-    .login .close {
-        bottom: 0px;
-        right: 0px;
-     }
-    .login .close .icone-login{
-        font-size: 1.1em;
-    }
-    .login .img-login img {
-        width: 35px;
-        object-fit: contain;
-    }
-    .login form {
-        padding: 5px 0;
-        width: 240px;
-    }
-    .login form .inpt-login {
-        padding-bottom: 10px;
-    }
-    .login form .inpt-login label {
-        font-size: 12px;
-        padding-bottom: 4px;
-    }
-    .login form .inpt-login input[type] {
-        font-size: 11px;
-     }
-     .login form .inpt-login input {
-        padding: 6px;
-     }
-     .login form .inpt-login input::placeholder{
-        font-size: 11px;
-     }
-     .login form .btn-login .btn-blue{
-        padding: 4px 8px;
-        font-size: 11px;
-     }    
-     .login form .inpt-checkbox {
-        padding: 10px 0 0;
-    }
-    .login form .inpt-checkbox p {
-        font-size: 11px;
-     }
+@media screen and (max-width: 320px) {
+  section {
+    height: 75%;
+  }
+
+  .login {
+    padding: 15px;
+    width: 235px;
+  }
+
+  .login .close {
+    bottom: 0px;
+    right: 0px;
+  }
+
+  .login .close .icone-login {
+    font-size: 1.1em;
+  }
+
+  .login .img-login img {
+    width: 35px;
+    object-fit: contain;
+  }
+
+  .login form {
+    padding: 5px 0;
+    width: 240px;
+  }
+
+  .login form .inpt-login {
+    padding-bottom: 10px;
+  }
+
+  .login form .inpt-login label {
+    font-size: 12px;
+    padding-bottom: 4px;
+  }
+
+  .login form .inpt-login input[type] {
+    font-size: 11px;
+  }
+
+  .login form .inpt-login input {
+    padding: 6px;
+  }
+
+  .login form .inpt-login input::placeholder {
+    font-size: 11px;
+  }
+
+  .login form .btn-login .btn-blue {
+    padding: 4px 8px;
+    font-size: 11px;
+  }
+
+  .login form .inpt-checkbox {
+    padding: 10px 0 0;
+  }
+
+  .login form .inpt-checkbox p {
+    font-size: 11px;
+  }
 }
-@media screen and (min-width : 320px) and (max-width : 480px) {
-    .login {
-        padding: 10px;
-        width: 296px;
-    }
-    .login .img-login img {
-        width: 38px;
-     }
-     .login form {
-        padding: 3px 0;
-        width: 285px;
-    }
-    .login form .inpt-login label {
-        font-size: 13px;
-        padding-bottom: 2px;
-    }
-    .login form .inpt-login input[type] {
-        font-size: 13px;
-     }
-     .login form .inpt-login input {
-        padding: 6px;
-     }
-     .login form .inpt-login input::placeholder{
-        font-size: 11px;
-     }
-     .login form .inpt-login {
-        padding-bottom: 10px;
-    }
-    .login form .inpt-checkbox p {
-        font-size: 11px;
-    }
-    .login .close {
-        bottom: inherit;
-        right: inherit; 
-    }
-    .login .close .icone-login {
-        font-size: 1.2em;
-    }
-    .btn-blue {
-        padding: 6px 12px;
-     }
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .login {
+    padding: 10px;
+    width: 296px;
+  }
+
+  .login .img-login img {
+    width: 38px;
+  }
+
+  .login form {
+    padding: 3px 0;
+    width: 285px;
+  }
+
+  .login form .inpt-login label {
+    font-size: 13px;
+    padding-bottom: 2px;
+  }
+
+  .login form .inpt-login input[type] {
+    font-size: 13px;
+  }
+
+  .login form .inpt-login input {
+    padding: 6px;
+  }
+
+  .login form .inpt-login input::placeholder {
+    font-size: 11px;
+  }
+
+  .login form .inpt-login {
+    padding-bottom: 10px;
+  }
+
+  .login form .inpt-checkbox p {
+    font-size: 11px;
+  }
+
+  .login .close {
+    bottom: inherit;
+    right: inherit;
+  }
+
+  .login .close .icone-login {
+    font-size: 1.2em;
+  }
+
+  .btn-blue {
+    padding: 6px 12px;
+  }
 }
-@media screen and (min-width : 480px) and (max-width : 767px){
-    .login{
-        padding: 10px;
-    }
-    .login .close {
-        bottom: inherit;
-        right: inherit;
-     }
-     .login form .inpt-login{
-        padding-bottom: 10px;
-     }
-    .login .img-login img {
-        width: 60px;
-    }
-    .login form .inpt-login label {
-        font-size: 13px;
-        padding-bottom: 4px;
-    }
-    .login form .inpt-login input::placeholder{
-        font-size: 12px;
-    }
-    .login form .inpt-login input {
-        padding: 7px;
-     }
-     .login form {
-        padding: 3px 0;
-        width: 330px;
-    }
-    .login form .inpt-login {
-        padding-bottom: 10px;
-    }
-    .btn-blue {
-        padding: 8px 12px;
-    }
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .login {
+    padding: 10px;
+  }
+
+  .login .close {
+    bottom: inherit;
+    right: inherit;
+  }
+
+  .login form .inpt-login {
+    padding-bottom: 10px;
+  }
+
+  .login .img-login img {
+    width: 60px;
+  }
+
+  .login form .inpt-login label {
+    font-size: 13px;
+    padding-bottom: 4px;
+  }
+
+  .login form .inpt-login input::placeholder {
+    font-size: 12px;
+  }
+
+  .login form .inpt-login input {
+    padding: 7px;
+  }
+
+  .login form {
+    padding: 3px 0;
+    width: 330px;
+  }
+
+  .login form .inpt-login {
+    padding-bottom: 10px;
+  }
+
+  .btn-blue {
+    padding: 8px 12px;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 900px) {
+  section {
+    height: 95%;
+  }
+
+  .login {
+    padding: 10px;
+    width: 360px;
+  }
+
+  .login .close {
+    bottom: -2px;
+    right: 2px;
+  }
+
+  .login .img-login img {
+    width: 60px;
+  }
+
+  .login form {
+    padding: 5px 0;
+    width: 320px;
+  }
+
+  .login form .inpt-login label {
+    font-size: 13px;
+    padding-bottom: 4px;
+  }
+
+  .login form .inpt-login input {
+    padding: 7px;
+  }
+
+  .login form .inpt-login input::placeholder {
+    font-size: 12px;
+  }
 }

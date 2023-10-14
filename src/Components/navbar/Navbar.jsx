@@ -40,7 +40,7 @@ function Navbar() {
         <nav className={MenuOpen ? "menubar active" : "menubar"}>
           <ul>
             <li>
-              <Link to = "/Contact-Us" className="links" onClick={handleClick} exact > Contact Sales</Link>
+              <Link  className="links" onClick={handleClick}  > Contact Sales</Link>
             </li>
             <li>
               <Link to = "/Login" className="links" onClick={handleClick} exact>Login</Link>
