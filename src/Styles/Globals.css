@@ -273,6 +273,7 @@ img {
   border: 1.2px solid var(--text-color);
   padding: 12px;
   border-radius: 10px;
+  flex: 1 1 200px;
 }
 
 .fatures .groups .group .group_info {
@@ -433,7 +434,7 @@ img {
 
 .commonly .commonly-components img {
   position: relative;
-  top: 53px;
+  top: 40px;
   width: 500px;
   height: 350px;
 }
@@ -496,7 +497,7 @@ img {
   align-items: end;
   background-color: var(--blue);
   padding: 4em 0 2em;
-  margin-top: 3em;
+  margin-top: 0;
   border-radius: 130px 0px 130px 0px;
 }
 
@@ -932,7 +933,7 @@ footer .made-with p span a {
   }
 
   .commonly .commonly-components img {
-    top: 19px;
+    top: 23px;
     width: 200px;
     height: 162px;
   }
@@ -1298,7 +1299,7 @@ footer .made-with p span a {
   }
 
   .commonly .commonly-components img {
-    top: 23px;
+    top: 36px;
     width: 250px;
     height: 220px;
   }
@@ -1683,7 +1684,7 @@ footer .made-with p span a {
   }
 
   .commonly .commonly-components img {
-    top: 36px;
+    top: 21px;
     width: 330px;
     height: 250px;
   }
@@ -1983,6 +1984,7 @@ footer .made-with p span a {
   }
 
   .commonly .commonly-components img {
+    top: 46px;
     width: 300px;
     height: 300px;
   }
@@ -2053,5 +2055,71 @@ footer .made-with p span a {
     max-width: 230px;
     padding: 9px;
     flex: 1 1 187px;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1033px) {
+  p {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  h1 {
+    font-size: 35px;
+    line-height: 50px;
+  }
+
+  img {
+    width: 390px;
+  }
+
+  .fatures .groups .group {
+    max-width: 240px;
+    padding: 10px;
+    flex: 1 1 150px;
+  }
+
+  .fatures .groups .group .img {
+    padding: 6px 5px 4px;
+    width: 27px;
+  }
+
+  .fatures .groups .group .img img {
+    width: 27px;
+  }
+
+  .commonly .commonly-components {
+    padding: 1em 0;
+  }
+
+  .commonly .commonly-components img {
+    top: 54px;
+    width: 341px;
+    height: 308px;
+  }
+}
+
+@media screen and (min-width: 890px) and (max-width: 1094px) {
+  .suscribe .suscribe-img img {
+    bottom: 9px;
+    left: 122px;
+  }
+
+  .suscribe .suscribe-img .img img {
+    bottom: 141px;
+    left: 277px;
+  }
+}
+
+@media screen and (min-width: 1094px) and (max-width: 1195px) {
+  .suscribe .suscribe-img .img img {
+    width: 44px;
+    bottom: 130px;
+    left: 381px;
+  }
+
+  .suscribe .suscribe-img img {
+    width: 141px;
+    left: 238px;
   }
 }
