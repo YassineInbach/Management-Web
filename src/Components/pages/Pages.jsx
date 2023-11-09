@@ -3,7 +3,6 @@ import Trusted from "../TrustedClients/Trusted";
 import HeroSection from "../hero/HeroSection";
 import Features from "../TopFeatures/Features";
 import Tasks from "../AllTasks/Tasks";
-import AboutUs from "../Think_About_Us/AboutUs.JSX";
 import Commonly from "../Commonly_Asked/Commonly";
 import { Helmet } from "react-helmet";
 import img from "../../../public/Images/logo.png";
@@ -29,9 +28,7 @@ function Pages() {
       <div style={{ background: "var(--fafafa)" }}>
         <Tasks />
       </div>
-      <div style={{ background: "var(--fcfcfc)" }}>
-        <AboutUs />
-      </div>
+     
       <div style={{ background: "var(--fafafa)"}}>
         <Commonly />
         <Suscribe />

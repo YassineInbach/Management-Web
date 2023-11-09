@@ -335,91 +335,6 @@ img {
   max-width: 400px;
 }
 
-.center {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: center;
-}
-
-.cards {
-  display: flex;
-  align-items: start;
-  flex-wrap: nowrap;
-  justify-content: start;
-  column-gap: 1.3em;
-  padding: 4em 2em 1em;
-  width: 100%;
-  /*transition: all 1s ease;*/
-}
-
-.cards .card {
-  max-width: 405px;
-  border: 1.5px solid var(--blue);
-  border-radius: 13px;
-  padding: 0 10px 20px 10px;
-  background-color: #fafafa;
-  width: 50%;
-  flex-shrink: 0;
-  transition: all 3s ease;
-}
-
-.center .wrapper {
-  width: 76%;
-}
-
-.cards .card .img {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.cards .card .img img {
-  width: 65px;
-  position: absolute;
-}
-
-.cards .card h3 {
-  font-weight: 700;
-  color: #000000;
-  letter-spacing: 1px;
-}
-
-.cards .card h6 {
-  color: grey;
-  font-weight: 500;
-  letter-spacing: 1px;
-}
-
-.cards .card p {
-  font-size: 12px;
-  font-weight: 400;
-  color: #1b1a1a;
-  line-height: 17px;
-}
-
-.cards .card .content-card {
-  padding-top: 35px;
-  text-align: center;
-}
-
-.map {
-  display: flex;
-  align-items: center;
-  column-gap: 13px;
-  margin-top: 10px;
-}
-
-.map button {
-  width: 15px;
-  height: 15px;
-  background: var(--black);
-  border: 2px solid var(--fcfcfc);
-  border-radius: 10px;
-}
-
 .commonly .commonly-info {
   text-align: center;
 }
@@ -857,56 +772,6 @@ footer .made-with p span a {
     overflow: hidden;
   }
 
-  .cards {
-    column-gap: 8px;
-    padding: 1em 0;
-    /* transition: all 1s ease; */
-  }
-
-  .center {
-    width: 100%;
-  }
-
-  .center .wrapper {
-    width: 60%;
-  }
-
-  .cards .card {
-    padding: 0px 7px 9px 7px;
-    width: 88%;
-  }
-
-  .cards .card .img img {
-    width: 23px;
-  }
-
-  .cards .card .content-card {
-    padding-top: 11px;
-  }
-
-  .cards .card h3 {
-    font-size: 10px;
-  }
-
-  .cards .card h6 {
-    font-size: 8px;
-  }
-
-  .cards .card p {
-    font-size: 10px;
-    line-height: 15px;
-  }
-
-  .map {
-    column-gap: 9px;
-    margin-top: 0;
-  }
-
-  .map button {
-    width: 10px;
-    height: 10px;
-  }
-
   .commonly {
     padding: 1em;
   }
@@ -1222,56 +1087,6 @@ footer .made-with p span a {
 
   .all-tasks .info:nth-child(2) {
     flex-direction: column-reverse;
-  }
-
-  .box {
-    padding: 1em;
-    overflow: hidden;
-  }
-
-  .center {
-    width: 100%;
-  }
-
-  .cards {
-    column-gap: 12px;
-    padding: 1em;
-  }
-
-  .cards .card {
-    padding: 0 8px 10px 8px;
-    width: 90%;
-  }
-
-  .cards .card .img img {
-    width: 32px;
-  }
-
-  .cards .card .content-card {
-    padding-top: 17px;
-  }
-
-  .cards .card h3 {
-    font-size: 12px;
-  }
-
-  .cards .card p {
-    font-size: 11px;
-    line-height: 16px;
-  }
-
-  .cards .card h6 {
-    font-size: 10px;
-  }
-
-  .map {
-    column-gap: 10px;
-    margin-top: 3px;
-  }
-
-  .map button {
-    width: 11px;
-    height: 11px;
   }
 
   .commoly {
@@ -1605,47 +1420,6 @@ footer .made-with p span a {
 
   h2 {
     font-size: 16px;
-  }
-
-  .center {
-    width: 100%;
-  }
-
-  .center .wrapper {
-    width: 80%;
-  }
-
-  .cards {
-    column-gap: 1em;
-    padding: 2em 1em 1em;
-    /* transition: all 1s ease; */
-  }
-
-  .cards .card {
-    padding: 0 8px 15px 8px;
-    width: 80%;
-  }
-
-  .cards .card .img img {
-    width: 40px;
-  }
-
-  .cards .card .content-card {
-    padding-top: 20px;
-  }
-
-  .cards .card h3 {
-    font-size: 14px;
-  }
-
-  .map {
-    column-gap: 8px;
-    margin-top: 4px;
-  }
-
-  .map button {
-    width: 12px;
-    height: 12px;
   }
 
   .commonly {
