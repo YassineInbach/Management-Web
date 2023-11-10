@@ -42,7 +42,6 @@ function Login() {
               <input
                 type="text"
                 name="userName"
-                id="userName"
                 placeholder="Enter UserName"
                 required
               />
@@ -52,7 +51,6 @@ function Login() {
               <input
                 type="password"
                 name="Password"
-                id="Password"
                 placeholder="Enter Password"
                 required
               />
