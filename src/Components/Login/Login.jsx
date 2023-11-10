@@ -18,7 +18,7 @@ function Login() {
   }, [Close]);
   function handleClick(){
    setClose(!Close);
-   return window.location.href = "/Tasker";
+   return window.location.href = "/";
   }
 
   return (
