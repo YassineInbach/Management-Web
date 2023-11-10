@@ -1,8 +1,8 @@
-import React from 'react'
-import Button from "../../UI/Button"
-import {MdEmail} from "react-icons/md"
-import img from "../../../../public/Images/Path.png"
-import img1 from "../../../../public/Images/Path1.png"
+import React from 'react';
+import Button from "../../UI/Button";
+import {MdEmail} from "react-icons/md";
+import img from "../../../../public/Images/Path.png";
+import img1 from "../../../../public/Images/Path1.png";
 
 function Suscribe() {
     return (
