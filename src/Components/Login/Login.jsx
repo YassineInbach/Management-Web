@@ -1,9 +1,9 @@
 import React , {useState , useEffect} from "react";
 import "./Login.css";
 import Button from "../UI/Button";
-import Profile from "../../../public/Images/Profile.png";
+import img from "../../../public/Images/profile.png";
 import { AiOutlineClose } from "react-icons/ai";
-import {Helmet} from "react-helmet"
+import {Helmet} from "react-helmet";
 function Login() {
   const [Close , setClose] = useState(true);
   useEffect(() => {
@@ -34,7 +34,7 @@ function Login() {
             <AiOutlineClose className="icone-login" />
           </div>
           <div className="img-login">
-            <img src={Profile} alt="" />
+            <img src={img} alt="" />
           </div>
           <form action="">
             <div className="inpt-login">
